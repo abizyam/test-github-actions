@@ -6,8 +6,8 @@ jobs:
     steps:
       - name: simple JS actions
         id: greet
-        uses: actiond/hello-world-javascript-action@v1
+        uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: Yamina
       - name: Log Greeting Time
-        run: echo "${{steps.greet.output.time}}""
+        run: echo "${{steps.greet.output.time}}"
