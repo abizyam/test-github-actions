@@ -12,7 +12,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v1
       - name: list files after checkout
-        run: !
+        run: |
           pwd
           ls -a
       - name: simple JS actions
