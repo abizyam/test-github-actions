@@ -5,4 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: simple JS actions
+        id: greet
         uses: actiond/hello-world-javascript-action@v1
+        with:
+          who-to-greet: Yamina
+      - name: Log Greeting Time
+        run: echo "${{steps.greet.output.time}}""
