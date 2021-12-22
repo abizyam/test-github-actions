@@ -9,7 +9,8 @@ jobs:
           pwd
           ls -a
           echo $GITHUB_SHA
-          echo $GIHUB_REPOSITORY
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKFLOW
           echo ${{github.token}}
         shell: bash
       - name: checkout
