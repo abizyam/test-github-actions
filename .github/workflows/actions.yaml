@@ -1,5 +1,9 @@
 name: Actions workflow
+<<<<<<< HEAD
 on: [push, pull_request, pull_request_review]
+=======
+on: [push]
+>>>>>>> dccdb66c3d5abe625c3acc1ad12ae8c037e19e91
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
