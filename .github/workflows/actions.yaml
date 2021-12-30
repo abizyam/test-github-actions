@@ -1,7 +1,9 @@
 name: Actions workflow
 on: 
   repository_dispatch:
-    types:[build]
+    branches:
+      - main
+      - develop
   # schedule:
   #   - cron: "0/5 * * * *"
   #   - cron: "0/6 * * * *"
